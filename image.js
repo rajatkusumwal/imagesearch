@@ -16,7 +16,7 @@ app.get('/api/imagesearch/:id',function(req,res){
     var q=req.params.id.replace(" ","+");
     var options={
         host: 'www.googleapis.com',
-        path: '/customsearch/v1?q='+q+'&cx=016146634643917433559%3Agddxft5mony&searchType=image&start='+req.query.offset+'&key=AIzaSyCYeJZzvZLIhnjpzBi5fAqBMnZjYi0dQPY'
+        path: '/customsearch/v1?q='+q+'&cx=016146634643917433559%3Agddxft5mony&searchType=image&start='+req.query.offset+'&key=EnterAPIKey'
     };
     https.request(options,function callback(response){
         var str="";
